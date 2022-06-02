@@ -1,21 +1,45 @@
 package se.lexicon;
 
+class Person {
+
+    String firstName;
+    String lastName;
+    int birthYear;
+
+    public String getInformation(){
+        return firstName + " " + lastName + " Age: " + (2022 - birthYear);
+    }
+
+}
+
 public class ObjectExamples {
 
     public static void main(String[] args) {
 
+        Person simon = new Person();
+        simon.firstName = "Simon";
+        simon.lastName = "Elbrink";
+        simon.birthYear = 1997;
 
-        String firstName = "Simon";
-        String lastName = "Elbrink";
-        int birthYear = 1997;
+        Person erik = new Person();
+        erik.firstName = "Erik";
+        erik.lastName = "Svensson";
+        erik.birthYear = 1976;
 
-        String firstName1 = "Erik";
-        String lastname1 = "Svensson";
-        int birthYear1 = 1976;
+        Person ulf = new Person();
+        ulf.birthYear = 1988;
 
-        String firstName2 = "Ulf";
-        String lastname2 = "Bengtsson";
-        int birthYear2 = 1980;
+
+//        getInformation();
+
+
+//        System.out.println(simon.getInformation());
+//        System.out.println(simon.firstName + " " + simon.lastName + " Age: " + (2022 - simon.birthYear));
+//
+//        System.out.println(erik.getInformation());
+
+        System.out.println(erik);
+
 
 
 
