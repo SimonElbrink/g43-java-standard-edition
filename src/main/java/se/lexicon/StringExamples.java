@@ -16,9 +16,11 @@ public class StringExamples {
         String lastName = "Elbrink";
         int birthYear = 1997;
 
+        System.out.println(birthYear);
+
         String personInfo = firstName + " " + lastName + " Age: " + (2022 - birthYear);
 
-        System.out.println(personInfo);
+        System.out.println("" + personInfo);
 
     }
 }
