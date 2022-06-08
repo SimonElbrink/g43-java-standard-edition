@@ -8,6 +8,7 @@ public class Calculator {
      *
      */
 
+    // Help structure code,
     //Syntax for Method: [Access Modifier] static [return Type] [Method Name] ([Params]) {}
     public static double addition(double number1, double number2){
         double result = 0;
