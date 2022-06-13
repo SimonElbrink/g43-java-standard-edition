@@ -1,4 +1,4 @@
-package se.lexicon.methods;
+package se.lexicon.fundamentals.methods;
 
 import java.util.Scanner;
 

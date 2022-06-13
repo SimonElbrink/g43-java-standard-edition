@@ -1,6 +1,6 @@
-package se.lexicon;
+package se.lexicon.fundamentals.string;
 
-public class StringExamples {
+public class StringExamples1 {
 
     public static void main(String[] args) {
 

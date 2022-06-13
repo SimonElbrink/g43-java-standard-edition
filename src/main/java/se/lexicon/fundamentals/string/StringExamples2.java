@@ -1,48 +1,72 @@
-package se.lexicon.string;
+package se.lexicon.fundamentals.string;
 
-public class StringExamples {
+public class StringExamples2 {
 
     public static void main(String[] args) {
 
-        //String syntax = ""
-        String sentence = "Hello I'm a String.";
+
+//        introString();
+//        length_CharAt();
+//        indexOf();
+//        subString();
+//        equals();
+//        contains_startsWith_endsWith();
+//        replace();
+//        trim();
+    }
+
+
+    private static void introString() {
+        //String syntax -> ""
+        //Type -> String (Capital "S")
+
+     String aWord = "Hi";
+    String sentence = "Hello Java Group 43";
+    String aName = "Simon";
+    aName = aName.concat(" Elbrink");
+    System.out.println(aName);
+
 //        String s = new String("String Value");
 
         int i = 1000;
 //        i. // Does not have methods.
 
-        sentence.toLowerCase(); // Strings have methods
+        sentence.toLowerCase(); // String is an Object and have methods.
 
 
-//        replaceExamples();
+        String firstName = "Simon";
+        String lastName = "Elbrink";
+        int birthYear = 1997;
 
+        System.out.println(birthYear);
 
+        String personInfo = firstName + " " + lastName + " Age: " + (2022 - birthYear);
 
+        System.out.println("" + personInfo);
     }
 
 
-    public static void ex1(){
-        //             0123456
+    public static void length_CharAt(){
+
         String name = "Simon Elbrink";
 
-        System.out.println(name.length());
+        System.out.println(name.length()); // 13
 
-        System.out.println(name.charAt(6));
+        System.out.println(name.charAt(6)); // E
     }
 
-    public static void ex2(){
+    public static void indexOf(){
 
         String name = "Erik Svensson";
 
 
         System.out.println(name.indexOf("Sven"));
         System.out.println(name.indexOf("ik"));
+
         System.out.println("Names splits at index: " + name.indexOf(" "));
 
         System.out.println(name.indexOf("s")); // 9
         System.out.println(name.indexOf("s",10)); //10
-
-
         System.out.println(name.lastIndexOf("s")); // 10
 
 
@@ -53,11 +77,9 @@ public class StringExamples {
         System.out.println(c);
 
 //        System.out.println(name.charAt(name.indexOf("S")));
-
-
     }
 
-    public static void ex3(){
+    public static void subString(){
         // Substring
         String message = "I Love Programming in Java!";
 
@@ -69,14 +91,12 @@ public class StringExamples {
         String messageLove = message.substring(indexOfL,indexOfL+4);
         System.out.println(messageLove);
 
-
         String[] messageArray = message.split(" ");
-
 
         System.out.println(messageArray[1]);
     }
 
-    public static void equalsExamples(){
+    public static void equals(){
 
         String message1 = "I Love Programming in Java!";
         String message2 = "i LOVe PrOgraMMing in JAVA!";
@@ -86,11 +106,9 @@ public class StringExamples {
 
         boolean ownIgnoreCasing = message1.toLowerCase().equals(message2.toLowerCase());
 
-
     }
 
-
-    public static void containsExamples(){
+    public static void contains_startsWith_endsWith(){
 
         String message = "I Love Programming in Java!";
 
@@ -102,8 +120,7 @@ public class StringExamples {
 
     }
 
-
-    public static void replaceExamples(){
+    public static void replace(){
 
         String message = "I Love Programming in Java!";
 
@@ -115,15 +132,10 @@ public class StringExamples {
 
     }
 
-
-    public static void trimExample(){
+    public static void trim(){
         String message = "         \n I Love\t Programming in Java! \t \t \n ";
 
         System.out.print(message.trim()); // Removes whitespaces in beginning of end of the String
-
-
     }
-
-
 
 }

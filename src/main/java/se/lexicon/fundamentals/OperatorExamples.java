@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.fundamentals;
 
 public class OperatorExamples { // Name of Public Class and File needs to be the same.
 

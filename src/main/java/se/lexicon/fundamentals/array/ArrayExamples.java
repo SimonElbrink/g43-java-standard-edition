@@ -1,4 +1,4 @@
-package se.lexicon.array;
+package se.lexicon.fundamentals.array;
 
 import java.util.Arrays;
 

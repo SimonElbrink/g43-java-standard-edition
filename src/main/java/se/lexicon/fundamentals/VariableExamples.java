@@ -1,4 +1,4 @@
-package se.lexicon; // Package always at line 1
+package se.lexicon.fundamentals; // Package always at line 1
 
 
 // Single-Line Comment - Text that java Compiler will never look at.

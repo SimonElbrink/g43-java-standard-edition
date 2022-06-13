@@ -1,7 +1,7 @@
-package se.lexicon;
+package se.lexicon.fundamentals;
 
 
-import se.lexicon.methods.MethodExamples;
+import se.lexicon.fundamentals.methods.MethodExamples;
 
 public class Main { //Start of Class
 

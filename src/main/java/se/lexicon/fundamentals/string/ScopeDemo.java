@@ -1,4 +1,4 @@
-package se.lexicon.string;
+package se.lexicon.fundamentals.string;
 
 public class ScopeDemo {
 
