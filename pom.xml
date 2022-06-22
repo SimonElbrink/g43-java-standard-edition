@@ -11,6 +11,7 @@
     <modules>
         <module>week1-lecture-practice</module>
         <module>calculator</module>
+        <module>oop-lecture</module>
     </modules>
 
     <properties>
