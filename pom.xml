@@ -12,6 +12,7 @@
         <module>week1-lecture-practice</module>
         <module>calculator</module>
         <module>oop-lecture</module>
+        <module>static-instance</module>
     </modules>
 
     <properties>
