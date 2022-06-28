@@ -2,6 +2,10 @@ package se.lexicon;
 
 public class Main {
 
+    // 1.Static is always running first in the program
+    // 2. instance
+    // 3. constructors "Instantiation"
+
     //Fields
     public static int number1 = 10;
 
