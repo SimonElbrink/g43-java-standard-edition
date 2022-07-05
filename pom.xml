@@ -15,6 +15,7 @@
         <module>static-instance</module>
         <module>oop-exercise</module>
         <module>java-time-api</module>
+        <module>oop-class_inheritance</module>
     </modules>
 
     <properties>
