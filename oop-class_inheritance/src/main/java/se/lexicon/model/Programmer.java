@@ -6,13 +6,17 @@ import java.util.Arrays;
 //Programmer class can not be extended. this Final. So no specialized programmers...
 public final class Programmer extends Employee{
 
+    public static final double LANGUAGE_BONUS = 1_500;
+    public static final double CERTIFICATE_BONUS = 3_000;
+
     private String[] languages;
     private String[] certificates;
 
-    public Programmer(String name, LocalDate birthDate, double salary, LocalDate hiredDate, String[] languages, String[] certificates) {
-        super(name, birthDate, salary, hiredDate);
+    public Programmer(String name, LocalDate birthDate, LocalDate hiredDate, String[] languages, String[] certificates) {
+        super(name, birthDate, hiredDate);
         this.languages = languages;
         this.certificates = certificates;
+        calcSalary();
     }
 
     @Override // Optional - shows your intention of overriding. If violated you will get a compile error.
@@ -21,7 +25,19 @@ public final class Programmer extends Employee{
                 ". Also has certificates: " + Arrays.toString(certificates));
     }
 
+    @Override
+    public void calcSalary() {
+        double programmerSalary = BASE_SALARY;
 
+        double languageBonus = languages.length * LANGUAGE_BONUS;
+
+        double certificateBonus = certificates.length * CERTIFICATE_BONUS;
+
+        programmerSalary += languageBonus;
+        programmerSalary += certificateBonus;
+
+        setSalary(programmerSalary);
+    }
 
     public String[] getLanguages() {
         return languages;

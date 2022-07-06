@@ -3,7 +3,7 @@ package se.lexicon.model;
 import java.time.LocalDate;
 
 //Person Is a Class, subclass of Object.
-public class Person extends Object{ // extends Object is Redundant, already there.
+public abstract class Person extends Object{ // extends Object is Redundant, already there.
 
     private String name;
     private LocalDate birthDate;
@@ -14,9 +14,7 @@ public class Person extends Object{ // extends Object is Redundant, already ther
         this.birthDate = birthDate;
     }
 
-    public void printDescription(){
-        System.out.println("Person with Name and BirthDate");
-    }
+    public abstract void printDescription();
 
 
     public String getName() {
@@ -35,6 +33,11 @@ public class Person extends Object{ // extends Object is Redundant, already ther
         this.birthDate = birthDate;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", birthDate=" + birthDate +
+                '}';
+    }
 }
