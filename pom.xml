@@ -16,6 +16,8 @@
         <module>oop-exercise</module>
         <module>java-time-api</module>
         <module>oop-class_inheritance</module>
+        <module>enum-lecture</module>
+        <module>oop-interface-lecture</module>
     </modules>
 
     <properties>
