@@ -3,10 +3,11 @@ package se.lexicon;
 public class Main {
     public static void main(String[] args) {
 
+        CalculatorConsole calculatorConsole = new CalculatorConsole(new BasicCalculator());
 
-        BasicCalculator calculator = new BasicCalculator();
+        calculatorConsole.running();
 
-        System.out.println(calculator.addition(10.5,20.5));
+
 
     }
 }
