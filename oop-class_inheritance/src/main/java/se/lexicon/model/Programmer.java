@@ -16,7 +16,6 @@ public final class Programmer extends Employee{
         super(name, birthDate, hiredDate);
         this.languages = languages;
         this.certificates = certificates;
-        calcSalary();
     }
 
     @Override // Optional - shows your intention of overriding. If violated you will get a compile error.

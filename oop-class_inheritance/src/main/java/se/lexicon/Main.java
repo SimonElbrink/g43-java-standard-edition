@@ -1,11 +1,10 @@
 package se.lexicon;
 
 
-import se.lexicon.model.Employee;
-import se.lexicon.model.Person;
-import se.lexicon.model.Programmer;
+import se.lexicon.model.*;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -29,6 +28,7 @@ public class Main {
                         "fortran", "python", "lua", "ada"},
                 new String[]{"OCA", "OCP", "OCE", "OCM"}
                 );
+        tomTheHacker.calcSalary();
         System.out.println(Arrays.toString(tomTheHacker.getCertificates()));
 
         Employee employeeTom = new Programmer(
@@ -48,5 +48,14 @@ public class Main {
         tomTheHacker.printDescription();
         employeeTom.printDescription();
 
+
+        Student maxTheStudent = new Student("Max", LocalDate.parse("2000-07-05"), new ArrayList<>(Arrays.asList("Java", "System Design")), "Lexicon Småland - Växjö");
+
+        maxTheStudent.printDescription();
+
+        Manager mikeTheManager = new Manager("Mike",LocalDate.parse("1990-03-15"),LocalDate.parse("2000-01-10"));
+        mikeTheManager.calcSalary();
+
+        mikeTheManager.printDescription();
     }
 }
