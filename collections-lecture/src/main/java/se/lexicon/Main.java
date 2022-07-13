@@ -52,20 +52,21 @@ public class Main {
 
     public static void traversing_an_collection(){
 
-        //Creating an arrayList of doubles.
+        //Creating an arrayList of Doubles
+        //Can't create collection of a primitive type.
         //Double is a wrapper of the primitive type of "double"
         Collection<Double> doubles = new ArrayList<>();
         doubles.add(20.6);
-        doubles.add(59d);
+        doubles.add(Double.valueOf(59)); //Autoboxing - From primitive double value to Wrapper Class Double
         doubles.add(80d);
 
         System.out.println("--- For-Loop ---");
 
         for (Double d : doubles) {
-            System.out.println(d);
+            System.out.println(d.intValue()); // Unboxing - From Double class to primitive double
 
 
-            // in for loop we are NOT allowed to remove elements in the collection.
+            // in for loop we are NOT allowed to remove elements in the collection. -> throws ConcurrentModificationException
 //            if (d == 20.6){
 //                doubles.remove(d);
 //            }
