@@ -5,20 +5,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>se.lexicon</groupId>
-    <artifactId>g43-java-fundamentals</artifactId>
+    <artifactId>g43-java-standard-edition</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>week1-lecture-practice</module>
-        <module>calculator</module>
+        <module>fundamentals-lecture</module>
+        <module>fundamentals-practice</module>
+        <module>fundamentals-calculator</module>
         <module>oop-lecture</module>
-        <module>static-instance</module>
+        <module>oop-static-instance</module>
         <module>oop-exercise</module>
         <module>java-time-api</module>
         <module>oop-class_inheritance</module>
         <module>enum-lecture</module>
         <module>oop-interface-lecture</module>
-        <module>Collections-lecture</module>
+        <module>collections-lecture</module>
     </modules>
 
     <properties>
