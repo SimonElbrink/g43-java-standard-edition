@@ -18,6 +18,7 @@
         <module>oop-class_inheritance</module>
         <module>enum-lecture</module>
         <module>oop-interface-lecture</module>
+        <module>Collections-lecture</module>
     </modules>
 
     <properties>
